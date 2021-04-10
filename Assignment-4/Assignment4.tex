@@ -166,13 +166,11 @@ Let us define a Markov chain with states \{1,2,3,4\}, such that
 Then, \\
 \textbf{Markov chain diagram :}\\
 \begin{tikzpicture}[font=\sffamily]
-
         % Setup the style for the states
         \tikzset{node style/.style={state, 
                                     minimum width=2cm,
                                     line width=0.5mm,
                                     fill=gray!20!white}}
-
         % Draw the states
         \node[node style] at (0, 0)     (2)     {2};
         \node[node style] at (3, 0)     (3)     {3};
@@ -223,7 +221,6 @@ Then, the canonical form of the transition matrix is,
 \end{block}
 \end{blockarray}
 \end{align}
-
 The canonical form divides the transition matrix into four sub-matrices based on the states as listed below.\\
 \begin{blockarray}{ccc}
 & \text{Absorbing} & \text{Non-Absorbing} \\
@@ -305,3 +302,4 @@ Therefore,
     \text{ Req. Probability }= p_{13} = 0.33
 \end{align}
 \end{document}
+ 
